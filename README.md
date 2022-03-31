@@ -1,6 +1,6 @@
 # Pomodoro Clock
 
-*FreeCodeCamp front end developement libraries [project #5](https://www.freecodecamp.org/learn/ front-end-development-libraries/#front-end-development-libraries-projects)*
+*FreeCodeCamp front end developement libraries [project #5](https://www.freecodecamp.org/learn/front-end-development-libraries/#front-end-development-libraries-projects)*
 
 ---
 Available online [here](https://csb-jvrmv8.netlify.app/) 
