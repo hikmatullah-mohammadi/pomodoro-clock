@@ -1,0 +1,118 @@
+$lighter-bg: rgb(174, 252, 167);
+$darker-bg: green;
+$normal-bg: rgb(92, 182, 89);
+$basic-border: red 1px solid;
+$shadow: 2px 2px 2px red;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  body {
+    background-color: $normal-bg;
+    header {
+      text-align: center;
+      padding: 22px 1px;
+      background-color: $darker-bg;
+      color: white;
+      text-shadow: $shadow;
+    }
+    main {
+      width: 90%;
+      height: 400px;
+      background-color: $lighter-bg;
+      margin: 25px auto;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: 4px 4px 0 0 black, 8px 8px 0 0 red, 12px 12px 0 0 green;
+      #display {
+        border: $basic-border;
+        height: 150px;
+        width: 95%;
+        margin: 10px 2.5%;
+        font-size: 20px;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 50px);
+        * {
+          border: $basic-border;
+          border-bottom: none;
+          text-align: center;
+          padding-top: 10px;
+        }
+        #time-left {
+          padding-top: 7px;
+          font-size: 30px;
+        }
+      }
+      #control {
+        border: $basic-border;
+        height: 220px;
+        padding-block-start: 15px;
+        width: 95%;
+        margin-left: 2.5%;
+        background-color: $normal-bg;
+
+        #break-control {
+          height: 50px;
+          text-align: center;
+          padding-top: 15px;
+          color: white;
+          margin: 1px;
+          button {
+            font-size: 20px;
+            width: 10%;
+            background-color: lightgray;
+            border: none;
+            border-left: $basic-border;
+            &:hover {
+              background-color: $darker-bg;
+              color: white;
+            }
+          }
+        }
+        #session-control {
+          @extend #break-control;
+        }
+        #general-control {
+          @extend #break-control;
+          margin-top: 20px;
+          height: 80px;
+          button {
+            width: 40%;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: $shadow;
+          }
+        }
+      }
+    }
+    footer {
+      height: 50px;
+      display: grid;
+      place-items: center;
+      background-color: $darker-bg;
+      position: fixed;
+      inset: auto 0 0 0;
+      a {
+        text-decoration: none;
+        #name {
+          font-size: 1.5em;
+          color: white;
+          text-shadow: $shadow;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #name {
+    font-size: 1em;
+  }
+  #display * {
+    padding-top: 5px;
+  }
+}

@@ -1,0 +1,7 @@
+export const INC_BREAK = "INC_BREAK"
+export const DEC_BREAK = "DEC_BREAK"
+export const INC_SESSION = "INC_SESSION"
+export const DEC_SESSION = "DEC_SESSION"
+export const RESET = "RESET"
+export const START = "START"
+export const STOP = "STOP"

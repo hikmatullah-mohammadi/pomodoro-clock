@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* body {
+  background-color: #5cb659;
+}
+
+* body header {
+  text-align: center;
+  padding: 22px 1px;
+  background-color: green;
+  color: white;
+  text-shadow: 2px 2px 2px red;
+}
+
+* body main {
+  width: 90%;
+  height: 400px;
+  background-color: #aefca7;
+  margin: 25px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 0 0 black, 8px 8px 0 0 red, 12px 12px 0 0 green;
+  box-shadow: 4px 4px 0 0 black, 8px 8px 0 0 red, 12px 12px 0 0 green;
+}
+
+* body main #display {
+  border: red 1px solid;
+  height: 150px;
+  width: 95%;
+  margin: 10px 2.5%;
+  font-size: 20px;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%) [2];
+  grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50px) [3];
+  grid-template-rows: repeat(3, 50px);
+}
+
+* body main #display * {
+  border: red 1px solid;
+  border-bottom: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+* body main #display #time-left {
+  padding-top: 7px;
+  font-size: 30px;
+}
+
+* body main #control {
+  border: red 1px solid;
+  height: 220px;
+  -webkit-padding-before: 15px;
+  padding-block-start: 15px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: #5cb659;
+}
+
+* body main #control #break-control,
+* body main #control #session-control,
+* body main #control #general-control {
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  margin: 1px;
+}
+
+* body main #control #break-control button,
+* body main #control #session-control button,
+* body main #control #general-control button {
+  font-size: 20px;
+  width: 10%;
+  background-color: lightgray;
+  border: none;
+  border-left: red 1px solid;
+}
+
+* body main #control #break-control button:hover,
+* body main #control #session-control button:hover,
+* body main #control #general-control button:hover {
+  background-color: green;
+  color: white;
+}
+
+* body main #control #general-control {
+  margin-top: 20px;
+  height: 80px;
+}
+
+* body main #control #general-control button {
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px red;
+}
+
+* body footer {
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: green;
+  position: fixed;
+  inset: auto 0 0 0;
+}
+
+* body footer a {
+  text-decoration: none;
+}
+
+* body footer a #name {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 2px 2px red;
+}
+
+@media screen and (max-width: 480px) {
+  body footer a #name {
+    font-size: 1em;
+  }
+  body main #display * {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
